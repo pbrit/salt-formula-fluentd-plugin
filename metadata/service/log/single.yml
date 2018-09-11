@@ -1,0 +1,10 @@
+applications:
+- fluentd-plugin
+classes:
+- service.fluentd-plugin.support
+parameters:
+  fluentd-plugin:
+    log:
+      enabled: true
+      bind:
+        address: 0.0.0.0

@@ -1,0 +1,5 @@
+salt-formula-fluentd-plugin (2018.1) xenial; urgency=medium
+
+  * Initial release
+
+ -- Vladislav Kuspits vkuspits@mirantis.com  Mon, 10 Sep 2018 02:01:23 BST

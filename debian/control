@@ -1,0 +1,15 @@
+Source: salt-formula-fluentd-plugin
+Maintainer: Vladislav Kuspits <vkuspits@mirantis.com>
+Section: admin
+Priority: optional
+Build-Depends: debhelper (>= 9), python, python-yaml
+Standards-Version: 3.9.6
+Homepage: https://github.com/vkuspits
+Vcs-Browser: https://github.com/salt-formulas/salt-formula-fluentd-plugin
+Vcs-Git: https://github.com/salt-formulas/salt-formula-fluentd-plugin.git
+
+Package: salt-formula-fluentd-plugin
+Architecture: all
+Depends: ${misc:Depends}
+Description: fluentd-plugin salt formula
+ Install and configure fluentd-plugin.
