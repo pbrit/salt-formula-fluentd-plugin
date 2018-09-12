@@ -1,7 +1,7 @@
 DESTDIR=/
 SALTENVDIR=/usr/share/salt-formulas/env
 RECLASSDIR=/usr/share/salt-formulas/reclass
-FORMULANAME=$(shell grep name: metadata.yml|head -1|cut -d : -f 2|grep -Eo '[a-z0-9\-\_]*')
+FORMULANAME=fluentd_plugin
 VERSION=$(shell grep version: metadata.yml|head -1|cut -d : -f 2|grep -Eo '[a-z0-9\.\-\_]*')
 VERSION_MAJOR := $(shell echo $(VERSION)|cut -d . -f 1-2)
 VERSION_MINOR := $(shell echo $(VERSION)|cut -d . -f 3)

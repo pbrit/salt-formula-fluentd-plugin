@@ -1,0 +1,2 @@
+fluentd_plugin/* /usr/share/salt-formulas/env/fluentd_plugin/
+metadata/service/* /usr/share/salt-formulas/reclass/service/fluentd_plugin/

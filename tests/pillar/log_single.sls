@@ -1,3 +1,3 @@
-fluentd-plugin:
+fluentd_plugin:
   log:
     enabled: true
