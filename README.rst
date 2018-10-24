@@ -13,9 +13,25 @@ Single fluentd-plugin service
 
 .. code-block:: yaml
 
-    fluentd-plugin:
-      log:
-        enabled: true
+    applications:
+    - service.fluentd_plugin
+    parameters:
+      fluentd_plugin:
+        client:
+          enabled: true
+          elasticsearch:
+            host: 10.11.0.54
+            port: 855
+          rabbitmq:
+            user: admin
+            password: admin
+            vhost: /
+            cluster_node01_hostname: msg01
+            cluster_node02_hostname: msg02
+            cluster_node03_hostname: msg03
+            cluster_node01_address: 10.11.0.41
+            cluster_node02_address: 10.11.0.42
+            cluster_node03_address: 10.11.0.43
 
 
 References
