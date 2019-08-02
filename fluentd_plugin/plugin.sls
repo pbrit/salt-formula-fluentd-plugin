@@ -36,6 +36,23 @@ transmuter:
     - watch_in:
       - service: fluentd_service_agent
 
+filter:
+  file.managed:
+    - name: {{ client.dir.config }}/config.d/filter.conf
+    - source:
+      - salt://fluentd_plugin/files/filter.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    - require:
+      - pkg: fluentd_packages_agent
+      - file: fluentd_config_d_dir
+    - require_in:
+      - file: fluentd_config_d_dir_clean
+    - watch_in:
+      - service: fluentd_service_agent
+
 output_es:
   file.managed:
     - name: {{ client.dir.config }}/config.d/output-es.conf
